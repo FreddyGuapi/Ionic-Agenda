@@ -23,4 +23,19 @@ base de datos en firebase
 
 [![firebase.png](https://i.postimg.cc/tgMHmbHC/firebase.png)](https://postimg.cc/qtyYz9R9)
 
-se debe instalar las credenciales de su base de datos 
+Se debe instalar las credenciales de su base de datos:
+ 
+ firebaseConfig : {
+ 
+    apiKey: 
+ 
+    authDomain: 
+    
+    projectId: 
+    
+    storageBucket:
+    
+    messagingSenderId:
+    
+    appId: 
+  }
