@@ -1,0 +1,18 @@
+<ion-content>
+  <ion-icon name="arrow-back-outline" class="ion-padding" routerLink="/home/"></ion-icon>
+  <div class="main-section">
+    <h3 class="ion-padding">{{isEdit ? 'Editar Datos': 'Agregar Datos'}}</h3>
+    <div class="form ion-padding ion-margin">
+      <ion-select interface="action-sheet"[(ngModel)]="type" placeholder="Seleccione El parentesco">
+        <ion-select-option value="empresa">Empresa</ion-select-option>
+        <ion-select-option value="amigos">Amigo</ion-select-option>
+        <ion-select-option value="familia">Familia</ion-select-option>
+      </ion-select>
+      <ion-input placeholder="Nombre" [(ngModel)]="title" ></ion-input>
+      <ion-input placeholder="Email" type="email" [(ngModel)]="subTitle"></ion-input>
+      <ion-input placeholder="Telefono" type="number" [(ngModel)]="amount"></ion-input>
+
+      <ion-button color="dark" (click)="addTransaction()">{{isEdit ? 'Editar': 'Agregar'}}</ion-button>
+    </div>
+  </div>
+</ion-content>

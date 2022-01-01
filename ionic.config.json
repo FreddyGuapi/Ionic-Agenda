@@ -1,0 +1,7 @@
+{
+  "name": "phone-book-firebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
